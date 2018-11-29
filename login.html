@@ -21,7 +21,6 @@
     messagingSenderId: "497341972181"
 		  };
 		  firebase.initializeApp(config);
-
 		</script>
 	</header>
 	<body>
@@ -160,8 +159,7 @@
 			    		<span class="card request-items">Items:</span>
 				      </div>
 				      <div class="modal-footer">
-			    		<button type="button" class="btn btn-info btn card-btn" id="declineMain"> Decline </button>
-			    		<button class="btn btn card-btn"> Process </button>
+			    		<button class="btn btn card-btn" data-dismiss="modal"> Close </button>
 				      </div>
 				    </div>
 				  </div>
@@ -345,9 +343,9 @@
 							    		<span id="defectiveTableWarning" style="color:red"></span>
 									    <thead>
 									      <tr>
-									        <th width="50%"><center>Item Name</center></th>
+									        <th width="45%"><center>Item Name</center></th>
 									        <th width="5%"><center>Quantity</center></th>
-									        <th width="30%"><center>Status</center></th>
+									        <th width="35%"><center>Status</center></th>
 									        <th width="5%"><center> </center></th>
 									      </tr>
 									    </thead>
@@ -431,7 +429,7 @@
 			    <!--declined-->
 			    <div id="declined_div" style="display:none">
 			    	<div class="items-div-pcd" id="items-div-pcd">
-			    		<div class="card-div-pending rounded">
+			    		<div class="card-div-pending dbl rounded">
 			    			<span class="card status">Status</span>
 			    			<span class="card request-number">Request Number:</span>
 			    			<span class="card request-sent">Request Sent:</span>
@@ -441,7 +439,7 @@
 			    			<button class="btn btn card-btn" data-toggle="modal" data-target="#viewHistoryModal"> View History </button>
 			    			<button class="btn btn card-btn"> Move to Pending </button>
 			    		</div>
-			    		<div class="card-div-pending rounded">
+			    		<div class="card-div-pending dbl rounded">
 			    			<span class="card status">Status</span>
 			    			<span class="card request-number">Request Number:</span>
 			    			<span class="card request-sent">Request Sent:</span>
@@ -451,7 +449,7 @@
 			    			<button class="btn btn card-btn" data-toggle="modal" data-target="#viewHistoryModal"> View History </button>
 			    			<button class="btn btn card-btn"> Move to Pending </button>
 			    		</div>
-			    		<div class="card-div-pending rounded">
+			    		<div class="card-div-pending dbl rounded">
 			    			<span class="card status">Status</span>
 			    			<span class="card request-number">Request Number:</span>
 			    			<span class="card request-sent">Request Sent:</span>
@@ -466,7 +464,7 @@
 			    <!--completed-->
 			    <div id="completed_div" style="display:none">
 			    	<div class="items-div-pcd" id="items-div-pcd">
-			    		<div class="card-div-pending rounded">
+			    		<div class="card-div-pending dbl rounded">
 			    			<span class="card status">Status</span>
 			    			<span class="card request-number">Request Number:</span>
 			    			<span class="card request-sent">Request Sent:</span>
@@ -475,7 +473,7 @@
 			    			<span class="card request-items">Items:</span>
 			    			<button class="btn card-btn" data-toggle="modal" data-target="#viewHistoryModal"> View History </button>
 			    		</div>
-			    		<div class="card-div-pending rounded">
+			    		<div class="card-div-pending dbl rounded">
 			    			<span class="card status">Status</span>
 			    			<span class="card request-number">Request Number:</span>
 			    			<span class="card request-sent">Request Sent:</span>
@@ -484,7 +482,7 @@
 			    			<span class="card request-items">Items:</span>
 			    			<button class="btn card-btn" data-toggle="modal" data-target="#viewHistoryModal"> View History </button>
 			    		</div>
-			    		<div class="card-div-pending rounded">
+			    		<div class="card-div-pending dbl rounded">
 			    			<span class="card status">Status</span>
 			    			<span class="card request-number">Request Number:</span>
 			    			<span class="card request-sent">Request Sent:</span>
@@ -540,7 +538,8 @@
 				      <div class="modal-body">
 				        <span id="error-name" class="error"></span> 
 				        Item Name &emsp; 
-				         <input name="item-name" size="40px" id="item-name" class="input-name" >
+				         <input name="item-name" size="35px" id="item-name" class="input-name" >
+				         <br>
 				        Category &emsp; 
 				        <div class="modal-category">
 				          <span id="error-cat" class="error-cat"></span>
