@@ -70,6 +70,7 @@ $( "#add-item-btn").click(function(){
 });
 
 $(document).on("click", "#modal-confirm-summary-btn", function(event){
+	console.log("you bebeh");
 	$('#item-summary-modal').modal('hide')
 	$('#add-item-modal').modal('hide')
 	$('#alertModal').modal('show')

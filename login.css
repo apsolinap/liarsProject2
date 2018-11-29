@@ -201,9 +201,7 @@ body{
     float: left;
 }
 
-.searchBar:focus {
-    width: 50%;
-}
+
 .inventoryBtn {
   padding: 10px 15px;
   font-size: 12px;
