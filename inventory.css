@@ -11,7 +11,7 @@
 	padding-bottom: 20px;
 }
 input[type="number"] {
-   width:182px;
+   width:150px;
 }
 #add-item-unit-div{
 	display: inline;
@@ -50,7 +50,7 @@ input[type="number"] {
 	overflow-y: scroll;
 }
 .card-div{
-	height: 140px;
+	height: 150px;
 	width: 750px;
 	border: solid 1px grey;
 	margin: 2px;
@@ -101,7 +101,7 @@ input[type="number"] {
 
 
 .input-unit{
-	width: 150px;
+	width: 100px;
 	padding:4px;
 }
 
